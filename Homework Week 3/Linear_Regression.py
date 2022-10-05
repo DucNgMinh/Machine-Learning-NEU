@@ -4,8 +4,6 @@ import pandas as pd
 class LinearRegression():
     def __init__(self):
         self.theta = None
-        self.alpha = 0.01 # step size
-        self.elpison = 0.001 # error after comma
 
     def fit(self, x, y):
         # create X matrix
