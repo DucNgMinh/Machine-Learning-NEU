@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 
+from Homework_Week_4 import Polynomial_Feature
+
 class LinearRegression():
     def __init__(self):
         self.theta = None
@@ -14,7 +16,13 @@ class LinearRegression():
         self.theta = np.linalg.pinv(X.T @ X) @ X.T @ y
 
     def predict(self, x):
-        return np.sum(np.dot(x, self.theta[1:]) + self.theta[0])
+        if x.ndim == 1:
+            x = x.reshap(-1,1)
+        x = np.hstack((np.ones((x.shape[0], 1)), x))
+        return x @ self.theta
 
     def get_model_theta(self):
         return self.theta
+
+
+
