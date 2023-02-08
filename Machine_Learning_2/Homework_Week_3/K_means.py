@@ -6,24 +6,24 @@ class K_means():
     def __init__(self, K):
         self.K = K
 
-    def kmean_init_centers(self, X):
+    def kmean_init_centers(self):
         # random choose point from original dataset
-        return X[np.random.choice(X.shape[0], self.K, replace= False)]
+        return X[np.random.choice(self.X.shape[0], self.K, replace= False)]
 
-    def kmean_assign_labels(self, X, centers):
+    def kmean_assign_labels(self, X):
         # calculate distances from points to centers
-        D = np.sqrt(np.sum((X[:, None] - centers)**2, axis=2))
+        D = np.sqrt(np.sum((X[:, None] - self.centers)**2, axis=2))
 
         # return the group label of the point which is the closest distance
         return np.argmin(D, axis= 1)
 
-    def kmean_update_centers(self, X, labels):
+    def kmean_update_centers(self):
         # create center point
-        centers = np.zeros((self.K, X.shape[1]))
+        centers = np.zeros((self.K, self.X.shape[1]))
 
         for k in range(self.K):
             # cluster data into group
-            Xk = X[labels == k]
+            Xk = self.X[self.labels == k]
 
             # calculate new center point
             centers[k] = np.mean(Xk, axis= 0)
@@ -31,11 +31,11 @@ class K_means():
 
     def fit_transform(self, X):
         self.X = X
-        self.centers = self.kmean_init_centers(X)
+        self.centers = self.kmean_init_centers()
 
         for i in range(500):
-            self.labels = self.kmean_assign_labels(X, self.centers)
-            self.centers = self.kmean_update_centers(X, self.labels)
+            self.labels = self.kmean_assign_labels(self.X)
+            self.centers = self.kmean_update_centers()
 
     def get_centers(self):
         return self.centers
@@ -52,7 +52,7 @@ class K_means():
         return np.sum(sum_distances)
 
     def predict(self, X):
-        return pd.DataFrame(self.kmean_assign_labels(X, self.centers))
+        return pd.DataFrame(self.kmean_assign_labels(X))
 
 
 
