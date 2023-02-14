@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="607083ed-a2b7-4ba5-81cf-3549ea981e41" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/11204838 - Nguyễn Minh Đức - HW1 - PCA - Notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/11204838 - Nguyễn Minh Đức - HW1 - PCA - Notebook.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework_Week_2/11204838 - Nguyễn Minh Đức - HW2 - TSNE - Notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework_Week_2/11204838 - Nguyễn Minh Đức - HW2 - TSNE - Notebook.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework_Week_3/11204838 - Nguyễn Minh Đức - HW3 - Kmeans - Notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework_Week_3/11204838 - Nguyễn Minh Đức - HW3 - Kmeans - Notebook.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework_Week_3/K_means.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework_Week_3/K_means.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +33,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Duc/Python Projects/Machine-Learning-NEU/Machine_Learning_2/Homework_Week_1_PCA"
+    "last_opened_file_path": "C:/Users/ADMIN/PycharmProjects/Data-Driven-Marketing",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -38,6 +50,8 @@
       <option name="presentableId" value="Default" />
       <updated>1672585025396</updated>
       <workItem from="1672585026612" duration="18000" />
+      <workItem from="1676215588395" duration="26000" />
+      <workItem from="1676257145395" duration="484000" />
     </task>
     <servers />
   </component>

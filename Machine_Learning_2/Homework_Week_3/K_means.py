@@ -8,7 +8,7 @@ class K_means():
 
     def kmean_init_centers(self):
         # random choose point from original dataset
-        return X[np.random.choice(self.X.shape[0], self.K, replace= False)]
+        return self.X[np.random.choice(self.X.shape[0], self.K, replace= False)]
 
     def kmean_assign_labels(self, X):
         # calculate distances from points to centers
