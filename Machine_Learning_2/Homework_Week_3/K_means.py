@@ -42,7 +42,6 @@ class K_means():
 
     def data_and_labels(self):
         return np.hstack((self.X, self.predict(self.X)))
-
     def inertia_(self):
         sum_distances = []
         for k in range(self.K):
